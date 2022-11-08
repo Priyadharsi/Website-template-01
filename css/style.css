@@ -152,14 +152,16 @@
 }
 /*---------------------------------service style ends-----------*/
 /*---------------------------------service style logo-----------*/
-.service-logos-section{
+.logos-section{
 	background-color: red;
-    pading: 80px 0;
+    height: 187px;
 }
 .service-logo{
     background-color: black;
-    height: 80px;
+    height: 90px;
 }	
+
+
 
 
 
