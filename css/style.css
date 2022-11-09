@@ -65,44 +65,175 @@
 }
 .col-lg-12{
 	width: 100%;
-	padding: 0.15px;
+	padding: 0 15px;
 }
 /*---------------------Header style---------*/
 .header{
 	background-color: black;
-	padding: 10px 0; 
+	padding: 24px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0 )	
 }
-.logo{
-	background-color: red;
-	height: 50px;
+h1.logo > a{
+    color: white;
+    text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 700;
 }
-.navbar{
-	background-color: red;
-	height: 50px;
+h1.logo > a > span{
+	color: #ffc451;
 }
-.button{
-	background-color: red;
-	height: 50px;
+li.nav-list > a{
+	text-decoration: none;
 }
+.nav-bar .nav-menu .nav-list{	
+	display: inline-block;
+}
+.nav-bar .nav-menu{
+	text-align: center;
+}
+.nav-list > a{
+    display: block;
+    color: white;
+	font-size: 15px;
+	padding: 6px 18px;
+}
+.nav-list > a:hover{
+	color: #ffc451;
+}
+.nav-button{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 45px;	
+}
+.nav-button > a{
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+.nav-button{
+	border-color: #ffc451;
+}
+.nav-button:hover{
+	background-color: #ffc451;
+	color: #000;
+}
+.dropdown, .dropdown-sub{
+	position: relative;
+}
+.nav-dropdown, .dropdown-sub-nav{
+	position: absolute;
+    top: 100%;
+	left: 58%;
+	background-color: white;
+	min-width: 160px;
+	padding: 10px 0;
+    opacity: 0; 
+	visibility: visible;
+    transform: translateY(30px);
+    transition: all 0.3s ease;	
+}
+.dropdown-sub-nav{
+	left: 100%
+	transform: translateX(-30px);
+}
+.nav-dropdown > a > i, .dropdown-sub-nav{
+	margin-left: 15px;
+}
+.nav-dropdown >li > a, .dropdown-sub-nav > li > a{
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-size: 15px;
+	text-align: left;
+	line-height: 2;
+	padding: 0 12px;
+	transition: all 0.3s ease;
+}
+.dropdown-sub > a > i{
+	margin-left: 10px;
+}
+.nav-dropdown >li > a:hover, .dropdown-sub-nav > li > a:hover{
+	background-color: #ffc451;
+	color: black;
+}
+.dropdown:hover .nav-dropdown, .dropdown-sub:hover .dropdown-sub-nav{
+	opacity: 1; 
+	visibility: visible;
+	transform: translateY(0);
+}  
+.dropdown-sub .nav-dropdown .dropdown:hover{
+	opacity: 1;
+	visibility: visible;
+}
+
+	
 /*----------------------header style end-------------------*/
 /*---------------------------------banner style-----------*/
 .banner-section{
 	background-color: red;
-	padding: 60px 0;
+	background-image: linear-gradient(rgb(16 13 13 / 27%),rgb(16 13 13 / 27%)), url(../image/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-position: top;
+	background-attachment: fixed;
+	padding: 230px 0 230px;
+	/* height: 100vh; */
 }
 .banner-items{
 	justify-content: center;
 	margin-bottom: 100px;
+	
 }
 .banner-content{
-    background-color: black;
-    height: 300px;
+    text-align: center;
+	margin-bottom: 70px;
+}	
+ .banner-content h1{
+        color: white;
+        font-size: 50px;
+        line-height: 73px;
+        font-weight: 800px;
+      	padding-top: 15px 25px;
+		
 }
+ .banner-content h1 span{
+	 color: #ffc451;
+ }
+ .banner-content p{
+	 font-size: 25px;
+	 color: #e1d1d1;
+ }
+	
 .banner-boxes{
-    background-color: black;
-	height: 150px;
+    border: 1px solid grey;
+	text-align: center;
+	color: white;
 	margin-top: 10px;
+	height: 100%;
+	padding: 25px 20px;
+	
 }
+.banner-boxes:hover {
+	border-color: #ffc451;
+}
+.banner-boxes h4{
+	font-size: 28px;
+	padding-bottom: 10px;
+}
+.banner-boxes i{
+	color: #ffc451;
+	display: inline-block;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+/*---------------------------------banner style ends-----------*/
 /*---------------------------------about style-----------*/
 .about-section{
 	background-color: red;
@@ -124,7 +255,7 @@
 }
 .client-logo{
 	background-color: black;
-	height: 100px;
+	height: 143px;
 }
 /*---------------------------------client style ends-----------*/
 /*---------------------------------ad style-----------*/
@@ -154,25 +285,130 @@
 /*---------------------------------service style logo-----------*/
 .logos-section{
 	background-color: red;
-    height: 187px;
+    height: 167px;
 }
 .service-logo{
     background-color: black;
-    height: 90px;
+    height: 79px;
 }	
-
-
-
-
-
-
-
-
-
-
-
-
-
+.call{
+	background-color: red;
+	padding: 80px 0;
+}
+.action{
+	background-color:black;
+	height: 202px;
+}
+/*---------------------------------service style logo ends-----------*/
+/*---------------------------------portfolio title style-----------*/
+.portfolio-title{
+	background-color: red;
+	padding: 80px 0;
+}
+.title{
+	background-color: black;
+	height: 80px;
+}
+/*---------------------------------portfolio title style ends-----------*/
+/*---------------------------------portfolio boxes style-----------*/
+.portfolio-section{
+	background-color: red;
+	height: 523px;
+}
+.portfolio{
+    background-color: black;
+    height: 184px;
+	margin-bottom: 38px;
+}	
+/*---------------------------------portfolio boxes style ends-----------*/
+/*---------------------------------acievements style-----------*/
+.achievements-section{
+	background-color: red;
+	padding: 80px 0;
+}
+.achieve-img{
+	background-color: black;
+	height: 400px;
+}
+.achieve-content{
+	background-color:black;
+	height: 400px;
+}
+/*---------------------------------acievements style ends-----------*/
+/*---------------------------------employess style-----------*/
+.employ-section{
+	background-color: red;
+	padding: 80px 0;
+}
+.employ-datas{
+	background-color: black;
+	height: 400px;
+}
+/*---------------------------------employess style ends-----------*/
+/*---------------------------------teams title style-----------*/
+.teams-section{
+	background-color: red;
+	padding: 80px 0;
+}
+.teams-title{
+	background-color: black;
+	height: 80px;
+}
+/*---------------------------------teams title style ends-----------*/
+/*---------------------------------teams box style-----------*/
+.teams-box-section{
+	background-color: red;
+	padding: 80px 0;
+}
+.teams-names{
+	background-color: black;
+	height: 180px;
+}
+/*---------------------------------teams box style ends-----------*/
+/*---------------------------------contact title style-----------*/
+.contact-section{
+	background-color: red;
+	padding: 80px 0;
+}
+.contact-title{
+	background-color: black;
+	height: 80px;
+}
+/*---------------------------------contact title style ends-----------*/
+/*---------------------------------contact detail style-----------*/
+.contact-detail-section{
+	background-color: red;
+	padding: 80px 0;
+}
+.contact-datas{
+	background-color: black;
+	height: 400px;
+}
+/*---------------------------------contact detail style ends-----------*/
+/*---------------------------------workers info style-----------*/
+.workers-info-section{
+	background-color: red;
+	padding: 80px 0;
+}
+.workers-loc{
+	background-color: black;
+	height: 400px;
+}
+.workers-inputdatas{
+	background-color:black;
+	height: 400px;
+}
+/*---------------------------------workers style ends-----------*/
+/*---------------------------------footer info style-----------*/
+.footer-section{
+	background-color: red;
+	padding: 80px 0;
+}
+.footer-datas{
+	background-color: black;
+	height: 400px;
+}
+/*---------------------------------footer info style ends-----------*/
 
 
 
