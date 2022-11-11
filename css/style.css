@@ -106,14 +106,14 @@ li.nav-list > a{
 	color: #ffc451;
 }
 .nav-button{
-    border: 2px solid white;
+    border: 2px solid #ffc451;
     border-radius: 5px;
     padding: 10px 45px;	
 }
 .nav-button > a{
 	text-decoration: none;
-	font-size: 15px;
-	color: white;
+	font-size: 13px;
+	color: #e7dcdc;
 	text-align: center;
 }
 .nav-button{
@@ -121,7 +121,7 @@ li.nav-list > a{
 }
 .nav-button:hover{
 	background-color: #ffc451;
-	color: #000;
+	color: #343a40;		;
 }
 .dropdown, .dropdown-sub{
 	position: relative;
@@ -220,6 +220,9 @@ li.nav-list > a{
 	padding: 25px 20px;
 	
 }
+.banner-boxes h4:hover{
+	color: #ffc451;
+}
 .banner-boxes:hover {
 	border-color: #ffc451;
 }
@@ -236,26 +239,72 @@ li.nav-list > a{
 /*---------------------------------banner style ends-----------*/
 /*---------------------------------about style-----------*/
 .about-section{
-	background-color: red;
 	padding: 80px 0;
 }
-.about-content{
-	background-color: black;
-	height: 400px;
+.about-content h2{
+	font-size: 30px;
+	margin-bottom: 10px;
 }
-.about-img{
-	background-color: black;
-	height: 400px;
+.about-content p{
+	margin-bottom: 20px;
+}
+.about-content ul{
+	margin-bottom: 20px;
+}
+.about-content ul li{
+	padding-bottom: 15px;
+	position: relative;
+	padding-left: 25px;
+}
+.about-img img{
+	width: 100%;
+	height: auto;
+}
+.about-content ul li i{
+	color: #ffc451;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 15px;
 }
 /*---------------------------------about style ends-----------*/
 /*---------------------------------client style-----------*/
 .client-section{
-	background-color: red;
-	padding: 80px 0;
+	padding: 60px 0;
 }
 .client-logo{
-	background-color: black;
-	height: 143px;
+	display: block;
+}
+.client-logo img{
+	width: 100%;
+	height: auto;
+	padding: 11px 42px;
+	filter: grayscale(100%);
+	opacity: 1;
+    transition: all 0.3s ease;	
+}
+.client-logo img:hover{
+	filter: grayscale(0);
+	opacity: 0.6;
+}
+.dots{
+	text-align: center;
+	padding: 20px 30px;
+}
+.dots .dots-box{
+	display:inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: grey;
+	border-radius: 50%;
+	margin: 5px 5px;
+	cursor: pointer;
+}
+.dots-box.active{
+	background-color: #ffc451;
+}
+.dots .dots-box:hover{
+	background-color: #ffc451;
 }
 /*---------------------------------client style ends-----------*/
 /*---------------------------------ad style-----------*/
