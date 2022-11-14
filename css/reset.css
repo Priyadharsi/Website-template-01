@@ -30,6 +30,9 @@ body {
 p, li{
 	color: #444444;
 }
+/* p, i{
+	color: #ffffffd4;
+} */
 nav ul, ul {
 	list-style: none;
 }
