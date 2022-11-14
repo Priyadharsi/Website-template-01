@@ -105,21 +105,20 @@ li.nav-list > a{
 .nav-list > a:hover{
 	color: #ffc451;
 }
-.nav-button{
-    border: 2px solid #ffc451;
-    border-radius: 5px;
-    padding: 10px 39px;	
-}
 .nav-button > a{
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 13px;
 	color: #e7dcdc;
 	text-align: center;
+	border: 2px solid #ffc451;
+	border-radius: 5px;
+	padding: 10px 28px;
+	display: inline-block;
 }
 .nav-button{
-	border-color: #ffc451;
+	text-align: right;
 }
-.nav-button:hover{
+.nav-button a:hover{
 	background-color: #ffc451;
 	color: #343a40;		;
 }
@@ -129,21 +128,19 @@ li.nav-list > a{
 .nav-dropdown, .dropdown-sub-nav{
 	position: absolute;
     top: 100%;
-	left: 58%;
+	left: 0;
 	background-color: white;
 	min-width: 160px;
 	padding: 10px 0;
     opacity: 0; 
-	visibility: visible;
+	visibility: hidden;
     transform: translateY(30px);
     transition: all 0.3s ease;	
 }
 .dropdown-sub-nav{
-	left: 100%
-	transform: translateX(-30px);
-}
-.nav-dropdown > a > i, .dropdown-sub-nav{
-	margin-left: 15px;
+	left: 100%;
+    top: 0;
+	transform: translate(-20px, 0px);
 }
 .nav-dropdown >li > a, .dropdown-sub-nav > li > a{
 	text-decoration: none;
@@ -215,7 +212,6 @@ li.nav-list > a{
     border: 1px solid grey;
 	text-align: center;
 	color: white;
-	margin-top: 10px;
 	height: 100%;
 	padding: 25px 20px;
 	
@@ -227,8 +223,8 @@ li.nav-list > a{
 	border-color: #ffc451;
 }
 .banner-boxes h4{
-	font-size: 28px;
-	padding-bottom: 10px;
+	font-size: 18px;
+	line-height: 24px;
 }
 .banner-boxes i{
 	color: #ffc451;
@@ -243,7 +239,8 @@ li.nav-list > a{
 }
 .about-content h2{
 	font-size: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	line-height: 33px;
 }
 .about-content p{
 	margin-bottom: 20px;
@@ -280,7 +277,7 @@ li.nav-list > a{
 	height: auto;
 	padding: 11px 42px;
 	filter: grayscale(100%);
-	opacity: 1;
+	opacity: 0.5;
     transition: all 0.3s ease;	
 }
 .client-logo img:hover{
@@ -308,91 +305,260 @@ li.nav-list > a{
 }
 /*---------------------------------client style ends-----------*/
 /*---------------------------------ad style-----------*/
-.ad-section{
-	background-color: red;
-	padding: 80px 0;
-}
-.ad-img{
-	background-color: black;
-	height: 400px;
-}
 .ad-content{
-	background-color: black;
-	height: 400px;
+	position: relative;
+	padding-left: 60px;
+	padding-bottom: 30px;
 }
+.ad-img img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 65px;
+}
+
+.ad-content i{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: #ffc451;
+    font-size: 30px;	
+}
+.ad-content h4{
+	font-size: 21px;
+	padding-bottom: 19px;
+}
+.ad-content p{
+	color: #808080b0;
+	font-size: 16px;
+	line-height: 20px;
+}
+
 /*---------------------------------ad style ends-----------*/
 /*---------------------------------service style-----------*/
-.service-section{
-	background-color: red;
-	padding: 80px 0;
-}
 .heading{
-	background-color: black;
-	height: 80px;
+	padding-left:0px 15px 15px;
+	padding-bottom: 35px;
 }
+.heading h3{
+	position: relative;
+	text-transform: uppercase;
+    color: #80808078;
+    font-size: 15px;
+	margin-bottom: 15px;	
+	
+}
+.heading h3:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	width: 100px;
+	height: 1px;
+	margin-left: 11px;
+	background-color: #ffc451;
+}
+.heading h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 600;
+}
+	
+
 /*---------------------------------service style ends-----------*/
 /*---------------------------------service style logo-----------*/
-.logos-section{
-	background-color: red;
-    height: 167px;
-}
+
 .service-logo{
-    background-color: black;
-    height: 79px;
-}	
-.call{
-	background-color: red;
-	padding: 80px 0;
+    text-align: center;
+	font-size: 17px;
+	padding: 93px 11px;
+	background-color: white;
+	border: 1px solid #80808014;
+	margin-bottom: 50px;
+	border-radius: 1px;
+	
 }
-.action{
-	background-color:black;
-	height: 202px;
+.service-logo:hover{
+	transform: translateY(15px) scale(1.05);
+	box-shadow: 0 0 10px #80808026;
+}
+.service-logo i{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #ffc451;
+	line-height: 60px;
+    font-size: 20px;
+	
+}
+.service-logo h4{
+	padding: 22px 23px;
+}
+.service-logo h4 a{
+	font-size: 23px;
+	color: black;
+	text-decoration: none; 
+}
+.service-logo p{
+	color: #00000091;
+	font-size: 15px;
+}
+.service-logo h4 a:hover{
+	color: #ffc451;
 }
 /*---------------------------------service style logo ends-----------*/
+/*---------------------------------call section-----------*/
+.call{
+	padding: 60px 0;
+}
+.action{
+	background-image: url(../image/cta-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;	
+	width: 100%;
+	height: auto;
+	padding: 77px 0 48px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.action h3{
+	color: white;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.action p{
+	color: white;
+	font-size: 15px;
+	padding-bottom: 20px;
+	line-height: 20px;
+}
+.call-button > a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px; 
+	border: 2px solid #ffffff3d;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px 31px;
+}
+.call-button > a:hover{
+	background-color: #ffc451;
+	color: #343a40;	
+}
+/*---------------------------------call section ends-----------*/
 /*---------------------------------portfolio title style-----------*/
-.portfolio-title{
-	background-color: red;
-	padding: 80px 0;
-}
 .title{
-	background-color: black;
-	height: 80px;
+	padding-left:0px 15px 15px;
+	padding-bottom: 35px;
 }
+.title h3{
+	position: relative;
+	text-transform: uppercase;
+    color: #80808078;
+    font-size: 15px;
+	margin-bottom: 15px;	
+	
+}
+.title h3:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	width: 100px;
+	height: 1px;
+	margin-left: 11px;
+	background-color: #ffc451;
+}
+.title h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 600;
+}
+.portfolio-types{
+	text-align: center;
+	padding: 20px 30px;
+	
+}
+.portfolio-types-boxes{
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+.portfolio-types .portfolio-types-boxes{
+	display:inline-block;
+	padding: 7px 17px;
+	border-radius: 2px;
+	color: #000000eb;
+ }
+.portfolio-types-boxes.active{
+	background-color: #ffc451;
+}
+.portfolio-types .portfolio-types-boxes:hover{
+	background-color: #ffc451;
+} 
 /*---------------------------------portfolio title style ends-----------*/
 /*---------------------------------portfolio boxes style-----------*/
 .portfolio-section{
-	background-color: red;
-	height: 523px;
+	padding: 80px 0;
 }
-.portfolio{
-    background-color: black;
-    height: 184px;
-	margin-bottom: 38px;
+.portfolio img{
+    width: 100%;
+	height: auto;
+	padding: 10px 20px;
 }	
 /*---------------------------------portfolio boxes style ends-----------*/
 /*---------------------------------acievements style-----------*/
 .achievements-section{
-	background-color: red;
-	padding: 80px 0;
+	margin-bottom: 25px;
 }
-.achieve-img{
-	background-color: black;
-	height: 400px;
+.achieve-img img{
+	width: 100%;
+	height: auto;
 }
-.achieve-content{
-	background-color:black;
-	height: 400px;
+.achieve-content h2{
+	font-size: 30px;
+	padding-bottom: 10px;
 }
+.achieve-content p{
+    font-size: 15px;
+	line-height: 20px;
+}
+.achieve-clients{
+    display: inline-block;
+}	
 /*---------------------------------acievements style ends-----------*/
 /*---------------------------------employess style-----------*/
 .employ-section{
-	background-color: red;
 	padding: 80px 0;
 }
 .employ-datas{
-	background-color: black;
-	height: 400px;
+	background-image: linear-gradient(rgba(0,0,0,0.67),rgba(0,0,0,0.78)), url(../image/testimonials-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width:100%;
+	height: auto;
+	text-align: center;
+	padding: 78px 49px;
 }
+.employ-datas img{
+	border-radius: 50%;
+	width: 106px;
+	border: 8px solid #8f878796;
+	margin-bottom: 17px;
+}
+.employ-datas h4{
+	color: white;
+	font-size: 20px;
+	padding-bottom: 14px;
+}	
+.employ-datas h6{
+    color: #ffffffa6;
+    font-size: 15px;
+    padding-bottom: 41px;
+}
+}
+.employ-section .employ-datas p{
+	color: white;
+	font-size: 18px;
+}	
 /*---------------------------------employess style ends-----------*/
 /*---------------------------------teams title style-----------*/
 .teams-section{
