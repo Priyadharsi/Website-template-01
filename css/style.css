@@ -173,7 +173,7 @@ li.nav-list > a{
 /*----------------------header style end-------------------*/
 /*---------------------------------banner style-----------*/
 .banner-section{
-	background-color: red;
+	/* background-color: red; */
 	background-image: linear-gradient(rgb(16 13 13 / 27%),rgb(16 13 13 / 27%)), url(../image/hero-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -244,6 +244,7 @@ li.nav-list > a{
 }
 .about-content p{
 	margin-bottom: 20px;
+	font-size: 16px;
 }
 .about-content ul{
 	margin-bottom: 20px;
@@ -372,14 +373,14 @@ li.nav-list > a{
 	padding: 93px 11px;
 	background-color: white;
 	border: 1px solid #80808014;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 	border-radius: 1px;
 	transition: all 0.5s ease;
 	
 }
 .service-logo:hover{
 	transform: translateX(10px) scale(1.05);
-	box-shadow: 0 0 10px #80808026;
+	box-shadow: 0 0 15px #80808026;
 }
 .service-logo i{
     display: inline-block;
@@ -449,10 +450,9 @@ li.nav-list > a{
 	padding-bottom: 60px 0;
 }
 .title{
-	padding-left:0px 15px 15px;
 	padding-bottom: 35px;
 }
-.title h3{
+/* .title h3{
 	position: relative;
 	text-transform: uppercase;
     color: #80808078;
@@ -473,7 +473,7 @@ li.nav-list > a{
 	text-transform: uppercase;
 	font-size: 30px;
 	font-weight: 600;
-}
+} */
 .portfolio-types{
 	padding-bottom: 30px;
 	display: flex;
@@ -570,10 +570,32 @@ li.nav-list > a{
 .achieve-content p{
     font-size: 15px;
 	line-height: 20px;
+	color: #000000b0;
 }
 .achieve-clients{
-    display: inline-block;
+	position: relative;
+	padding-left: 60px;
+	padding-bottom: 30px;
+}
+.achieve-clients i{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	padding: 17px 14px;
+	font-size: 34px;
+	color: #ffc451;
+}
+.achieve-clients h3{
+    font-size: 33px;
+    padding: 15px 10px;
+    font-weight: 600;
 }	
+.achieve-clients p{
+    font-size: 15px;
+    padding: 0 14px;
+	color: #000000b0;
+}
+
 /*---------------------------------acievements style ends-----------*/
 /*---------------------------------employess style-----------*/
 .employ-section{
@@ -616,64 +638,70 @@ li.nav-list > a{
 .teams-section{
 	padding: 60px 0;
 }
-.teams-title h3{
+.teams-image{
 	position: relative;
-	text-transform: uppercase;
-    color: #80808078;
-    font-size: 15px;
-	margin-bottom: 15px;	
-	
 }
-.teams-title h3:after{
-	content: "";
-	position: absolute;
-	top: 10px;
-	width: 100px;
-	height: 1px;
-	margin-left: 11px;
-	background-color: #ffc451;
-}
-.teams-title h2{
-	text-transform: uppercase;
-	font-size: 30px;
-	font-weight: 600;
-}
-/*---------------------------------teams title style ends-----------*/
-/*---------------------------------teams box style-----------*/
-.teams-box-section{
-	display: flex;
+.teams-image img{
+	display: block;
 	width: 100%;
-	margin: 0 auto;
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-.sara{
-    width: 100%;
-	border-radius: 3px;
-}	 
-.teams-names{
-	position: relative;
-	width: 33.33%;
-    border: 1px;
-	margin-right: 50px;
-	border-radius: 3px;
-	font-size: 35px;
-	background-color: #ffffff;
-	font-family: sans-serif;
-	box-shadow: 1px 1px 5px #8080803d;	
+	border-radius: 4px;
 }
 .teams-pos{
-	padding: 27px 10px;
-}	
- p{
-    color: #80808073;
-	font-size: 13px;
-	}
- h3{
-	font-size: 18px;
-	margin-bottom: 9px;
+	padding: 23px 19px;
 }
-
+.teams-pos h3{
+	font-size: 18px;
+	color: #0c0808bf;
+	padding-bottom: 11px;
+	font-weight: 600;
+}
+.teams-pos h5{
+	font-size: 14px;
+	color: #89818185;
+	font-weight: 200;
+}
+.teams-box-section{
+ /* border: 1px solid grey; */
+	border-radius: 4px;
+	box-shadow: 0 0 6px #80808030;
+}
+.teams-box-section{
+	position: relative;
+}
+ .teams-icons{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	padding: 20px;
+	text-align: center;
+	transform: translateY(-20px);
+	transition: all 0.5s ease;
+    opacity: 0; 
+ }
+.teams-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 25px;
+	text-align: center;
+	background-color: #ffffffad;
+	line-height: 25px;
+	color: #00000087;
+	font-size: 25px;
+	margin: 0 4px;
+	transition: all 0.5s ease;
+}
+.teams-box-section{
+	transform: translateY(-20px);
+}
+.teams-box-section:hover .teams-icons{
+	opacity: 1;
+	transform: translateY(0);
+}
+.teams-icons a:hover{
+	background-color: #ffc451;
+}
+.teams-
 /*---------------------------------teams box style ends-----------*/
 /*---------------------------------contact title style-----------*/
 .contact-section{
