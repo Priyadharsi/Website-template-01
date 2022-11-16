@@ -701,7 +701,7 @@ li.nav-list > a{
 .teams-icons a:hover{
 	background-color: #ffc451;
 }
-.teams-
+
 /*---------------------------------teams box style ends-----------*/
 /*---------------------------------contact title style-----------*/
 .contact-section{
@@ -725,17 +725,29 @@ li.nav-list > a{
 /*---------------------------------contact detail style ends-----------*/
 /*---------------------------------workers info style-----------*/
 .workers-info-section{
-	background-color: red;
 	padding: 80px 0;
 }
 .workers-loc{
-	background-color: black;
-	height: 400px;
+	display: flex;
+	padding: 10px 20px;
 }
-.workers-inputdatas{
+.loc-icon i{
+	font-size: 22px;
+	background-color: #ffc451;
+	padding: 10px 20px;
+}
+.loc h3{
+	font-size: 20px;
+	padding-left: 20px;
+}
+.loc p{
+	font-size: 20px;
+	padding-left: 20px;
+}
+ .workers-inputdatas{
 	background-color:black;
 	height: 400px;
-}
+} 
 /*---------------------------------workers style ends-----------*/
 /*---------------------------------footer info style-----------*/
 .footer-section{
