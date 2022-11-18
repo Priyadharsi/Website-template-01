@@ -893,7 +893,7 @@ li.nav-list > a{
 .newsfeed input{
 	width: 100px;
 }
- .newsfeed input{
+ .newsfeed{
 	position: relative;
 }
 .newsfeed input:after{
