@@ -33,7 +33,7 @@ p, li{
 /* p, i{
 	color: #ffffffd4;
 } */
-nav ul, ul {
+nav ul, ul, li {
 	list-style: none;
 }
 blockquote, q {
