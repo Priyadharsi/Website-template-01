@@ -269,9 +269,9 @@ li.nav-list > a{
 }
 /*---------------------------------about style ends-----------*/
 /*---------------------------------client style-----------*/
-.client-section{
+/* .client-section{
 	padding: 60px 0;
-}
+} */
 .client-logo{
 	display: block;
 }
@@ -308,6 +308,9 @@ li.nav-list > a{
 }
 /*---------------------------------client style ends-----------*/
 /*---------------------------------ad style-----------*/
+.ad-section{
+	padding: 60px 0;
+}
 .ad-content{
 	position: relative;
 	padding-left: 60px;
@@ -316,7 +319,7 @@ li.nav-list > a{
 .ad-img img{
 	width: 100%;
 	height: auto;
-	margin-bottom: 65px;
+	/* margin-bottom: 65px; */
 }
 
 .ad-content i{
@@ -341,6 +344,9 @@ li.nav-list > a{
 
 /*---------------------------------ad style ends-----------*/
 /*---------------------------------service style-----------*/
+/* .service-section{
+	padding: 60px 0;
+} */
 .heading{
 	padding-left:0px 15px 15px;
 	padding-bottom: 35px;
@@ -367,18 +373,13 @@ li.nav-list > a{
 	font-size: 30px;
 	font-weight: 600;
 }
-	
-
-/*---------------------------------service style ends-----------*/
-/*---------------------------------service style logo-----------*/
-
 .service-logo{
     text-align: center;
 	font-size: 17px;
 	padding: 93px 11px;
 	background-color: white;
 	border: 1px solid #80808014;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 	border-radius: 1px;
 	transition: all 0.5s ease;
 	
@@ -411,10 +412,13 @@ li.nav-list > a{
 .service-logo h4 a:hover{
 	color: #ffc451;
 }
-/*---------------------------------service style logo ends-----------*/
-/*---------------------------------call section-----------*/
-.call{
-	padding: 60px 0;
+/*---------------------------------service style ends-----------*/
+/*---------------------------------call section-----------------*/
+.call-section{
+	/* padding: 60px 0; */
+	margin-top: 25px;
+}
+.call{ 
 	background-image: url(../image/cta-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -440,7 +444,7 @@ li.nav-list > a{
 	text-decoration: none;
 	color: white;
 	font-size: 18px; 
-	border: 2px solid #ffffff3d;
+	border: 2px solid #ffffff;
 	border-radius: 5px;
 	display: inline-block;
 	padding: 10px 31px;
@@ -448,37 +452,13 @@ li.nav-list > a{
 .call-button > a:hover{
 	background-color: #ffc451;
 	color: #343a40;	
+	border-color: #ffc451;
 }
 /*---------------------------------call section ends-----------*/
 /*---------------------------------portfolio title style-----------*/
 .portfolio-section{
-	padding-bottom: 60px 0;
+	padding: 40px 0;
 }
-.title{
-	padding-bottom: 35px;
-}
-/* .title h3{
-	position: relative;
-	text-transform: uppercase;
-    color: #80808078;
-    font-size: 15px;
-	margin-bottom: 15px;	
-	
-}
-.title h3:after{
-	content: "";
-	position: absolute;
-	top: 10px;
-	width: 100px;
-	height: 1px;
-	margin-left: 11px;
-	background-color: #ffc451;
-}
-.title h2{
-	text-transform: uppercase;
-	font-size: 30px;
-	font-weight: 600;
-} */
 .portfolio-types{
 	padding-bottom: 30px;
 	display: flex;
@@ -511,6 +491,9 @@ li.nav-list > a{
 	width:100%;
 	height: auto;
 	transition: all 0.5s ease;
+}
+.port-overlay-text{
+	padding-left: 10px;
 }
 .portfolio .port-overlay{
      position: absolute;
@@ -561,7 +544,7 @@ li.nav-list > a{
 /*---------------------------------portfolio boxes style ends-----------*/
 /*---------------------------------acievements style-----------*/
 .achievements-section{
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .achieve-img img{
 	width: 100%;
@@ -584,7 +567,7 @@ li.nav-list > a{
 }
 .achieve-clients i{
 	position: absolute;
-	top: 11px;
+	top: 4px;
 	left: 0;
 	font-size: 36px;
 	font-weight: 100;
@@ -594,11 +577,11 @@ li.nav-list > a{
     font-size: 38px;
     font-weight: 600;
 	margin-bottom: 8px;
-	padding-left: 54px;
+	padding-left: 53px;
 }	
 .achieve-clients p{
     font-size: 14px;
-    padding: 3px 51px;
+    padding: 5px 55px;
 	line-height: 1.3;
 	color: rgb(0 0 0 / 63%);
 }
@@ -615,6 +598,7 @@ li.nav-list > a{
 	height: auto;
 	text-align: center;
 	margin-bottom: 37px;
+	margin-top: 40px;
 }
 .employ-datas img{
 	border-radius: 50%;
@@ -643,7 +627,7 @@ li.nav-list > a{
 /*---------------------------------employess style ends-----------*/
 /*---------------------------------teams title style-----------*/
 .teams-section{
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .teams-image{
 	position: relative;
@@ -652,7 +636,6 @@ li.nav-list > a{
 .teams-image img{
 	display: block;
 	width: 100%;
-    /* border-radius: 4px; */ 
 	border-top-left-radius: 4px;
     border-top-right-radius: 4px;  
 }
@@ -691,11 +674,8 @@ li.nav-list > a{
  }
 .teams-icons a{
 	display: inline-block;
-	/* width: 35px;
-	height: 25px; */
 	text-align: center;
-	background-color: #ffffffad;
-	/* line-height: 25px; */
+	background-color: rgb(255 255 255);
 	color: rgb(0 0 0 / 53%);
 	font-size: 20px;
 	margin: 0 4px;
@@ -704,8 +684,8 @@ li.nav-list > a{
 }
 .teams-icons i{
 	width: 40px;
-	height: 32px;
-	line-height: 32px;
+	height: 40px;
+	line-height: 40px;
 }
 .teams-box-section{
 	transform: translateY(-20px);
@@ -721,7 +701,7 @@ li.nav-list > a{
 /*---------------------------------teams box style ends-----------*/
 /*---------------------------------contact title style-----------*/
 .contact-section{
-	padding: 60px 0;
+	padding: 30px 0;
 }
 .map{
 	padding-bottom: 50px;
@@ -805,7 +785,7 @@ textarea.form-name{
 /*---------------------------------footer info style-----------*/
 .footer-section{
 	padding: 60px 0;
-	background-color: #000000eb;
+	background-color: #151515;
 	
 }
 .user h1{
@@ -848,8 +828,8 @@ textarea.form-name{
 }
 .link h3{
 	color: white;
-	padding-bottom: 13px;
-	font-weight: 100;
+	padding-bottom: 16px;
+	font-weight: 600;
 }
 .policy li > i{
 	color: #ffc451;
@@ -897,6 +877,7 @@ textarea.form-name{
 }
 .subscribe-type button:hover{
 	opacity: 0.9;
+	cursor: pointer;
 }
 .subscribe-type .subscribe-button{
 	position: absolute;
@@ -912,13 +893,12 @@ textarea.form-name{
 	border-radius: 0;
 }
  .cpy-info{
-	padding: 60px 0;
-	background-color: black;
+	padding: 30px 0;
+	background: black;
 } 
 .copyright{
 	text-align: center;
 	color: white;
-	margin-top:
 }
 .copyright h4{
 	line-height: 39px;
@@ -930,24 +910,12 @@ textarea.form-name{
 }
 .copyright h5 a{
 	text-decoration: none;
-	color: white;
+	color: #ffc451;
 }
 .copyright h5 > a:hover{
 	color: #ffc451;
 }
-/* .newsfeed input{
-	width: 100px;
-}
- .newsfeed{
-	position: relative;
-}
-.newsfeed input:after{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-} */
- 
+
 
 
 
