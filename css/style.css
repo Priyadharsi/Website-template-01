@@ -5,7 +5,7 @@
 	
 	}
 .container{
-	width: 1170px;
+	width: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -19,54 +19,72 @@
 	width: 100%;
 	padding: 0 15px;
 }
-.col-lg-1{
+.col-1{
 	width: 8.33%;
 	padding: 0 15px;
 }
-.col-lg-2{
+.col-2{
 	width: 16.66%;
 	padding: 0 15px;
 }
-.col-lg-3{
+.col-3{
 	width: 25%;
 	padding: 0 15px;
 }
-.col-lg-4{
+.col-4{
 	width: 33.33%;
 	padding: 0 15px;
 }
-.col-lg-5{
+.col-5{
 	width: 41.66%;
 	padding: 0 15px;
 }
-.col-lg-6{
+.col-6{
 	width: 50%;
 	padding: 0 15px;
 }
-.col-lg-7{
+.col-7{
 	width: 58.33%;
 	padding: 0 15px;
 }
-.col-lg-8{
+.col-8{
 	width: 66.66%;
 	padding: 0 15px;
 }
-.col-lg-9{
+.col-9{
 	width: 75%;
 	padding: 0 15px;
 }
-.col-lg-10{
+.col-10{
 	width: 83.33%;
 	padding: 0 15px;
 }
-.col-lg-11{
+.col-11{
 	width: 91.66%;
 	padding: 0 15px;
 }
-.col-lg-12{
+.col-12{
 	width: 100%;
 	padding: 0 15px;
 }
+
+.d-none{
+	display: none !important;
+}
+.d-block{
+	display: block !important;
+}
+/*---------------------Mobile menu---------*/
+.mobile-btn{
+	position: absolute;
+	top: 26px;
+	right: 15px;
+    background: transparent;
+    color: #fff;
+    font-size: 30px;
+	border: 0;
+}
+
 /*---------------------Header style---------*/
 .header{
 	background-color: black;
@@ -75,7 +93,8 @@
     left: 0;
     right: 0;
     top: 0;
-    background-color: rgba(0,0,0,0 )	
+    background-color: rgba(0,0,0,0 )
+     /* z-index: 99; */	
 }
 h1.logo > a{
     color: white;
@@ -117,6 +136,7 @@ li.nav-list > a{
 }
 .nav-button{
 	text-align: right;
+	margin-right: 50px;
 }
 .nav-button a:hover{
 	background-color: #ffc451;
@@ -194,7 +214,7 @@ li.nav-list > a{
  .banner-content h1{
         color: white;
         font-size: 50px;
-        line-height: 73px;
+        line-height: 65px;
         font-weight: 800px;
       	padding-top: 15px 25px;
 		
@@ -211,9 +231,10 @@ li.nav-list > a{
     border: 1px solid grey;
 	text-align: center;
 	color: white;
-	height: 100%;
+	height: auto;
 	padding: 25px 20px;
-	
+	transition: all 0.3s ease;
+	margin-bottom: 30px;
 }
 .banner-boxes h4:hover{
 	color: #ffc451;
@@ -259,6 +280,7 @@ li.nav-list > a{
 .about-img img{
 	width: 100%;
 	height: auto;
+
 }
 .about-content ul li i{
 	color: #ffc451;
@@ -319,7 +341,7 @@ li.nav-list > a{
 .ad-img img{
 	width: 100%;
 	height: auto;
-	/* margin-bottom: 65px; */
+    /* margin-bottom: 31px;  */
 }
 
 .ad-content i{
