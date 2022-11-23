@@ -93,8 +93,8 @@
     left: 0;
     right: 0;
     top: 0;
-    background-color: rgba(0,0,0,0 )
-     /* z-index: 99; */	
+    background-color: rgb(0,0,0 / 0% )
+  
 }
 h1.logo > a{
     color: white;
@@ -121,6 +121,9 @@ li.nav-list > a{
 	font-size: 18px;
 	padding: 6px 18px;
 }
+.align-items-center{
+	align-items: center;
+}
 .nav-list > a:hover{
 	color: #ffc451;
 }
@@ -140,7 +143,7 @@ li.nav-list > a{
 }
 .nav-button a:hover{
 	background-color: #ffc451;
-	color: #343a40;		;
+	color: #343a40;		
 }
 .dropdown, .dropdown-sub{
 	position: relative;
@@ -193,7 +196,6 @@ li.nav-list > a{
 /*----------------------header style end-------------------*/
 /*---------------------------------banner style-----------*/
 .banner-section{
-	/* background-color: red; */
 	background-image: linear-gradient(rgb(16 13 13 / 27%),rgb(16 13 13 / 27%)), url(../image/hero-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -263,9 +265,9 @@ li.nav-list > a{
 	line-height: 33px;
 }
 .about-content p{
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 	font-size: 16px;
-	line-height: 23px;
+	line-height: 20px;
 	color: #444444;
 }
 .about-content ul{
@@ -275,7 +277,7 @@ li.nav-list > a{
 	padding-bottom: 15px;
 	position: relative;
 	padding-left: 25px;
-	line-height: 23px
+	line-height: 23px;
 }
 .about-img img{
 	width: 100%;
@@ -289,11 +291,14 @@ li.nav-list > a{
 	left: 0;
 	font-size: 15px;
 }
+.column-reverse{
+	flex-direction: column-reverse !important;
+}
 /*---------------------------------about style ends-----------*/
 /*---------------------------------client style-----------*/
-/* .client-section{
+ /* .client-section{
 	padding: 60px 0;
-} */
+}  */
 .client-logo{
 	display: block;
 }
@@ -336,7 +341,7 @@ li.nav-list > a{
 .ad-content{
 	position: relative;
 	padding-left: 60px;
-	padding-bottom: 30px;
+	padding-top: 22px;
 }
 .ad-img img{
 	width: 100%;
@@ -346,7 +351,7 @@ li.nav-list > a{
 
 .ad-content i{
     position: absolute;
-    top: 0;
+    top: 21px;
     left: 5px;
     color: #ffc451;
     font-size: 35px;	
@@ -361,7 +366,7 @@ li.nav-list > a{
 	color: rgb(128 128 128 / 91%);
 	font-size: 16px;
 	line-height: 20px;
-	font-weight: 100
+	font-weight: 100;
 }
 
 /*---------------------------------ad style ends-----------*/
@@ -561,7 +566,7 @@ li.nav-list > a{
 }
 .portfolio:hover img{
 	transform: scale(1.2);
-	overflow: hidden
+	overflow: hidden;
 }
 /*---------------------------------portfolio boxes style ends-----------*/
 /*---------------------------------acievements style-----------*/
@@ -579,7 +584,7 @@ li.nav-list > a{
 }
 .achieve-content p{
     font-size: 17px;
-	line-height: 20px;
+	line-height: 26px;
 	color: rgb(0 0 0 / 60%);
 	padding-bottom: 14px;
 }

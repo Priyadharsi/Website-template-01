@@ -23,6 +23,9 @@
 	 .banner-boxes{
 		 height: auto;
 	 }
+	.about-content h2{
+	     padding-top: 16px;
+     }
 	 .ad-img img{
 		 margin-bottom: 31px;
 	 }
@@ -31,7 +34,22 @@
 	 }
      .achieve-content h2{
          font-size: 33px;
-	 }		 
+	 }
+     .action br{
+         display: none;
+	 }	
+     .action p{
+         font-size: 17px;
+	 }
+     .employ-datas br{
+        display: none;
+	 }
+     .employ-datas p{
+        font-size: 16px;
+	 }  
+     .achieve-content p{
+        line-height: 22px;
+	 }		
 }
 /*------------------------Mobile device landscape & smaller device----------------------------*/
 @media (min-width: 576px){
@@ -86,11 +104,9 @@
 	width: 100%;
 	padding: 0 15px;
 }
-
 }
 /*------------------------Medium device----------------------------*/
 @media (min-width: 768px){
-
 .container{
 	width: 720px;
 }
@@ -143,21 +159,42 @@
 	padding: 0 15px;
 }
 .ad-img img{
-		 margin-bottom: 31px;
+	margin-bottom: 31px;
 	 }
 .achieve-img img{
-         margin-bottom: 23px;
+    margin-bottom: 23px;
 	 }
-.column-reverse-md{
-	flex-direction: column-reverse !important;
-}
 .about-content h2{
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .header{
-    background-color: rgb(0 0 0 / 80%);
+    background-color: rgb(0 0 0 / 46%);
     z-index: 99;
 	 }
+.policy{
+	margin-bottom: 24px;
+}
+.action br{
+         display: none;
+	 }	
+     .action p{
+         font-size: 17px;
+	 }
+     .employ-datas br{
+        display: none;
+	 }
+     .employ-datas p{
+        font-size: 16px;
+	 } 
+   .achieve-clients p{
+        font-size: 12px;
+   }
+.d-md-block{
+     display:block !important;
+}
+.d-md-none{
+    display:none;
+}	
 }
 /*------------------------larger device----------------------------*/
 @media (min-width: 992px){
@@ -212,27 +249,27 @@
 	width: 100%;
 	padding: 0 15px;
 }
+.header{
+    background-color: rgb(0 0 0 / 0%);
+}
+.nav-list > a{
+	font-size: 14px;
+}
  .d-lg-block{
 	display: block !important;
  }	
  .d-lg-none{
 	display: none !important;
 }
-.ad-img img{
-		 margin-bottom: 0;
-	 }
-.achieve-img img{
-         margin-bottom: 0;
-	 } 
 .nav-button{
 	margin-right: 0;
 }
+/* .achieve-clients p{
+	font-size: 0;
+} */
 .banner-boxes{
 	height: 100%;
 	margin-bottom: 0;
-}
-.about-content h2{
-	padding-top: 0;
 }
 .row-lg{
 	flex-direction: row !important;
@@ -242,239 +279,10 @@
 @media (min-width: 1200px){
 	
 .container{
-	width: 1320px;
+	width: 1170px;
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1 device----------------------------*/
-@media (min-width: 1200px){
 	
 }
+
 
    

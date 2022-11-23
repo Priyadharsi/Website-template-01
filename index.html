@@ -3,7 +3,7 @@
 <head>
     <title>Website-template-01</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 <!------------header section ---------------->
 <header class="header">
    <div class="container">
-	      <div class="row">
+	      <div class="row align-items-center">
 		  <!-- logo starts -->
 		  <div class="col-4 col-lg-2">
 		    <h1 class="logo">
@@ -91,51 +91,45 @@
 		<!---------------banner content ends -->
 		<!----------------banner items boxes -------------->
 		    <div class="row  banner-items">
-			     <div class="col-4 col-lg-2">
+			     <div class="col-12 col-md-4 col-lg-2">
 				    <div class="banner-boxes">
 					    <i class="fa fa-university" aria-hidden="true"></i>
 						<h4>Lorem Ipsum</h4>
 					</div>
 					</div>
-				 <div class="col-4 col-lg-2">
+				 <div class="col-12 col-md-4 col-lg-2">
 				    <div class="banner-boxes">
 					    <i class="fa fa-bar-chart" aria-hidden="true"></i>
 						<h4>Dolor Sitema</h4>
 					</div>
                     </div>					
-				 <div class="col-4 col-lg-2">
+				 <div class="col-12 col-md-4 col-lg-2">
 				    <div class="banner-boxes">
 					    <i class="fa fa-list-alt" aria-hidden="true"></i>
 						<h4>Sedare Perspiciatis</h4>
 					</div>
 					</div>
-				 <div class="col-4 col-lg-2">
+				 <div class="col-12 col-md-4 col-lg-2">
 				    <div class="banner-boxes">
 					    <i class="fa fa-cart-plus" aria-hidden="true"></i>
 						<h4>Magni Dolores</h4>
 					</div>
 					</div>
-				 <div class="col-4 col-lg-2">
+				 <div class="col-12 col-md-4 col-lg-2">
 				    <div class="banner-boxes">
 					    <i class="fa fa-database" aria-hidden="true"></i>
 						<h4>Nemos Enimade</h4>
 					</div>
                     </div>					
-					
-					
-	
-	</div>
-	</div>
-	</div>
-	<!------------------banner items boxes ends--------------------->
-	</div>col
+		    </div>
+	     </div>
 </section>
 
 <!---------------banner section ends ---------------------->
 <!---------------about section---------------------->
 <section class="about-section">
     <div class="container">
-	    <div class="row column-reverse-md row-lg">
+	    <div class="row column-reverse row-lg">
 		     <div class="col-lg-6">
 			    <div class="about-content">
 				   <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
@@ -304,6 +298,7 @@
 				<a href="#">Call to action</a>
 				</div>
   </div>
+  </div>
 </section>	
 <!-----------------------call section ends---------------------->
 <!-----------------------portfolio boxes---------------------->
@@ -321,7 +316,7 @@
 		</div>
         <div class="row">
             <div class="col-md-6 col-lg-4">
-			     <!-- <div class="portfolio">
+			      <div class="portfolio">
 				  <img src="image/portfolio-1.jpg" alt="user picture">
 				  <div class="port-overlay">
 				    <div class="port-overlay-text">
@@ -333,10 +328,21 @@
 						</div>
 					</div>
 				  </div> 
-				 </div>  -->
-			   </div>
-			  <div class="col-md-6 col-lg-4"> -->
-				 <!-- <div class="portfolio">
+				 </div> 
+				 <div class="portfolio d-md-block d-none d-lg-none">
+				  <img src="image/portfolio-4.jpg" alt="user picture">
+				    <div class="port-overlay">
+				    <div class="port-overlay-text">
+					    <h4>APP 3</h4>
+						<h5>APP</h5>
+						<div class="port-icons">
+						    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+                </div> 
+				<div class="portfolio">
 				  <img src="image/portfolio-6.jpg" alt="user picture">
 				    <div class="port-overlay">
 				    <div class="port-overlay-text">
@@ -348,9 +354,22 @@
 						</div>
 					</div>
 				</div>
-                </div> -->
+                </div> 
+				<div class="portfolio d-none d-md-block d-lg-none">
+				  <img src="image/portfolio-8.jpg" alt="user picture">
+				    <div class="port-overlay">
+				    <div class="port-overlay-text">
+					    <h4>APP 3</h4>
+						<h5>APP</h5>
+						<div class="port-icons">
+						    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+                </div> 
 			</div> 
-			<div class="col-lg-4 d-none d-lg-block">
+			<div class=" col-md-6 col-lg-4">
 			     <div class="portfolio">
 				 <img src="image/portfolio-2.jpg" alt="user picture">
 				  <div class="port-overlay">
@@ -364,10 +383,8 @@
 					</div>
 				</div>
 			</div>
-			<!-- </div>
-			<div class="col-lg-4"> -->
-				<div class="portfolio">
-				 <img src="image/portfolio-5.jpg" alt="user picture">
+				<div class="portfolio d-none d-lg-none d-md-block">
+				 <img src="image/portfolio-3.jpg" alt="user picture">
 				  <div class="port-overlay">
 				    <div class="port-overlay-text">
 					    <h4>WEB 2</h4>
@@ -379,10 +396,8 @@
 					</div>
 				</div>
 				</div>
-				
-				<!-- <div class="col-lg-4"> -->
 				<div class="portfolio">
-				 <img src="image/portfolio-9.jpg" alt="user picture">
+				 <img src="image/portfolio-5.jpg" alt="user picture">
 				  <div class="port-overlay">
 				    <div class="port-overlay-text">
 					    <h4>WEB 3</h4>
@@ -394,10 +409,10 @@
 					</div>
                 </div>
             </div>	 
-          </div>			
-            <div class="col-lg-4">
-			   <div class="portfolio">
-			     <img src="image/portfolio-3.jpg" alt="user picture">
+         <!--  </div>			
+            <div class="col-lg-4 d-md-none d-lg-block"> -->
+			   <div class="portfolio d-md-block d-none d-lg-none">
+			     <img src="image/portfolio-7.jpg" alt="user picture">
 				  <div class="port-overlay">
 				    <div class="port-overlay-text">
 					    <h4>APP 2</h4>
@@ -410,7 +425,7 @@
 			   </div>
 			  </div>
 			   <div class="portfolio">
-			     <img src="image/portfolio-4.jpg" alt="user picture">
+			     <img src="image/portfolio-9.jpg" alt="user picture">
 				  <div class="port-overlay">
 				    <div class="port-overlay-text">
 					    <h4>CARD 2</h4>
@@ -422,10 +437,10 @@
 					</div>
 			   </div>
 			  </div>
-			 <!--  </div>
-			  <div class="col-lg-4"> -->
+			  </div>
+			  <div class="col-lg-4 d-lg-block d-md-none">
 			   <div class="portfolio">
-			     <img src="image/portfolio-7.jpg" alt="user picture">
+			     <img src="image/portfolio-3.jpg" alt="user picture">
 				  <div class="port-overlay">
 				    <div class="port-overlay-text">
 					    <h4>CARD 1</h4>
@@ -438,7 +453,7 @@
 			   </div>
 			   </div>
 			   <div class="portfolio">
-			     <img src="image/portfolio-8.jpg" alt="user picture">
+			     <img src="image/portfolio-4.jpg" alt="user picture">
 				  <div class="port-overlay">
 				    <div class="port-overlay-text">
 					    <h4>CARD 3</h4>
@@ -450,6 +465,32 @@
 					</div>
 			   </div>
                 </div>
+				<div class="portfolio">
+				  <img src="image/portfolio-7.jpg" alt="user picture">
+				    <div class="port-overlay">
+				    <div class="port-overlay-text">
+					    <h4>APP 3</h4>
+						<h5>APP</h5>
+						<div class="port-icons">
+						    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+                </div> 
+				<div class="portfolio">
+				  <img src="image/portfolio-8.jpg" alt="user picture">
+				    <div class="port-overlay">
+				    <div class="port-overlay-text">
+					    <h4>APP 3</h4>
+						<h5>APP</h5>
+						<div class="port-icons">
+						    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+                </div> 
 			</div> 
         </div>
     </div>
@@ -470,28 +511,28 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>				  
 				</div>
 			    <div class="row"> 
-				<div class="col-lg-6">
+				<div class="col-md-5 col-lg-6">
                 <div class="achieve-clients">
                     <i class="fa fa-smile-o" aria-hidden="true"></i>
 					<h3>65</h3>
 					<p><b>Happy Clients</b> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
 				</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-md-5 col-lg-6">
                 <div class="achieve-clients">
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
                     <h3>85</h3>
                     <p><b>Projects</b> adipisci atque cum quia aspernatur totam laudantium et quia dere tan.</p>					
 			    </div>
 			    </div>
-			    <div class="col-lg-6"> 
+			    <div class="col-md-5 col-lg-6"> 
 				<div class="achieve-clients">
                     <i class="fa fa-file-image-o" aria-hidden="true"></i>
 					<h3>35</h3>
 					<p><b>Years of experience</b> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel.</p>
 				</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-md-5 col-lg-6">
                 <div class="achieve-clients">
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     <h3>20</h3>
@@ -499,16 +540,14 @@
 			    </div>
 				</div>
 				</div>
-			 
-         
-		</div>
+			 </div>
+	    </div>
+	</div>
 </section>
 <!-----------------------acievements section ends---------------------->
 <!-----------------------employees section---------------------->	                			
 <section class="employ-section">
     <div class="container">
-        <!-- <div class="row">
-            <div class="col-lg-12"> -->
                 <div class="employ-datas">
 				  <img src="image/testimonials-2.jpg" alt="user picture">
 				  <h4>Sara Wilsson</h4>
@@ -516,8 +555,7 @@
 				  <p><i class="fa fa-quote-left" aria-hidden="true"></i> Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore<br> eram velit sunt aliqua noster fugiat irure amet legam anim culpa.<i class="fa fa-quote-right" aria-hidden="true"></i></p> 
 			    </div>
             </div>	
-        </div>
-		     <div class="dots">
+			<div class="dots">
 				    <span class="dots-box active"></span>
 					<span class="dots-box"></span>
 					<span class="dots-box"></span>
@@ -534,7 +572,7 @@
 				 <h2>CHECK OUR TEAM</h2>
 				 </div>
     <div class="row">
-	<div class="col-lg-3">
+	<div class="col-md-6 col-lg-3">
 	    <div class="teams-box-section">
 		<div class="teams-image">
 		    <img src="image/team-1.jpg" alt="user picture" class="sara">
@@ -551,7 +589,7 @@
         </div>
 		</div>
 		</div>
-		<div class="col-lg-3">
+		<div class="col-md-6 col-lg-3">
 		 <div class="teams-box-section">
          <div class="teams-image">
 		    <img src="image/team-2.jpg" alt="user picture" class="sara">
@@ -568,7 +606,7 @@
         </div>
 		</div>
 		</div>
-		<div class="col-lg-3">
+		<div class="col-md-6 col-lg-3">
 		<div class="teams-box-section">
 		<div class="teams-image">
 		    <img src="image/team-3.jpg" alt="user picture" class="sara">
@@ -585,7 +623,7 @@
         </div>
 		</div> 
 		</div>
-		<div class="col-lg-3">
+		<div class="col-md-6 col-lg-3">
 		<div class="teams-box-section">
 		<div class="teams-image">
 		    <img src="image/team-4.jpg" alt="user picture" class="sara">
@@ -679,11 +717,11 @@
 <section class="footer-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
-			<div class="user">
-		        <h1>GP<span>.</span></h1>
-		  </div>
-		  <div class="adam">
+            <div class="col-md-6 col-lg-3">
+			    <div class="user">
+		            <h1>GP<span>.</span></h1>
+		        </div>
+		    <div class="adam">
                <p>A108 Adam Street</p>
                <p>NY 535022, USA</p>
 			 </div>
@@ -699,7 +737,7 @@
 			        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				 </div>
 				 </div>
-				 <div class="col-lg-2">
+				 <div class="col-md-6 col-lg-2">
 				    <div class="link">
 					   <h3>Useful Links</h3>
 					   </div>
@@ -712,7 +750,7 @@
 						  <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#">Privacy policy</a></li>
 					   </ul>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 				      <div class="link">
 					    <h3>Our Services</h3>
 					      </div>
@@ -724,12 +762,10 @@
 						       <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#">Graphic Design</a></li>
 					        </ul>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-md-6 col-lg-4">
 					  <div class="letter">
 					    <h3>Our Newsletter</h3>
 						<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-					  <!-- </div>
-					  <div>  -->
 					  <form class="subscribe-type">
 					      <input type="email" id="your Email" name="subscribe">
 						  <button class="subscribe-button">subscribe</button>
@@ -737,9 +773,10 @@
 						 </div>
 					</div>
 					
-					</div>
-					</div>
+	    </div>
+	</div>
  </section>
+ 
  <section class="cpy-info">
    <div class="container">
      <div class="copyright">
