@@ -1,4 +1,9 @@
 /*------------------------Mobile device----------------------------*/
+@media (max-width: 300px){
+.nav-button > a{
+	padding: 6px 13px;
+}
+}
 @media (max-width: 576px){
      .client-logo img{
 		 padding: 15px 10px;
@@ -49,7 +54,10 @@
 	 }  
      .achieve-content p{
         line-height: 22px;
-	 }		
+	 }	
+    /* .nav-buttom > a{
+        padding: 5px 10px 10px 10px;
+}		  */
 }
 /*------------------------Mobile device landscape & smaller device----------------------------*/
 @media (min-width: 576px){
@@ -177,24 +185,26 @@
 .action br{
          display: none;
 	 }	
-     .action p{
+.action p{
          font-size: 17px;
 	 }
-     .employ-datas br{
+.employ-datas br{
         display: none;
 	 }
-     .employ-datas p{
+.employ-datas p{
         font-size: 16px;
 	 } 
-   .achieve-clients p{
+.achieve-clients p{
         font-size: 12px;
    }
 .d-md-block{
-     display:block !important;
+     display: block !important;
 }
 .d-md-none{
-    display:none;
-}	
+    display: none;
+}
+.nav-button > a{
+	font-size: 22px;
 }
 /*------------------------larger device----------------------------*/
 @media (min-width: 992px){
@@ -255,10 +265,10 @@
 .nav-list > a{
 	font-size: 14px;
 }
- .d-lg-block{
+.d-lg-block{
 	display: block !important;
  }	
- .d-lg-none{
+.d-lg-none{
 	display: none !important;
 }
 .nav-button{
@@ -274,6 +284,12 @@
 .row-lg{
 	flex-direction: row !important;
 }
+.nav-button > a{
+	font-size: 19px;
+	padding: 9px 10px;
+}
+.nav-list > a{
+	padding: 6px 13px;
 }
 /*------------------------desktop device---------------------------*/
 @media (min-width: 1200px){
