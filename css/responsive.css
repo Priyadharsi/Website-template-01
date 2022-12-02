@@ -55,9 +55,7 @@
      .achieve-content p{
         line-height: 22px;
 	 }	
-    /* .nav-buttom > a{
-        padding: 5px 10px 10px 10px;
-}		  */
+ 
 }
 /*------------------------Mobile device landscape & smaller device----------------------------*/
 @media (min-width: 576px){
@@ -285,7 +283,7 @@
 	flex-direction: row !important;
 }
 .nav-button > a{
-	font-size: 19px;
+	font-size: 14px;
 	padding: 9px 10px;
 }
 .nav-list > a{
